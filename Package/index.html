@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="js/jquery-1.8.0.js"></script>
+		<script src="js/jquery.roundabout.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link href="video-js.css" rel="stylesheet"/>
+		<script src="js/video.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="javascript.js"></script>
+		<title>Packt Video player</title>
+	</head>
+	<body>
+		<img class="logo" src="images/logo.png"/>
+		<div class="banner">
+			<ul id ="nav">
+				<li><div class="icon orange" style="background-position: 24px -56px;" data-horiz="24px"></div><a href="#" id="main-menu" class="navig">Main menu </a></li>
+
+				<li><div id="credits-icon" class="icon" style="background-position: 0px 0px;" data-horiz="0px"></div><a href="credits.html" id="credits" class="navig">Credits </a></li>
+
+				<li><div class="icon" style="background-position: 54px 0px;" data-horiz="54px"></div><a href="overview.html" id="course" class="navig"> Course Overview </a></li>
+				<!--<li><div class="icon" style="background-position: 54px 0px;" data-horiz="54px"></div><a href="Videos/Packt.m3u" id="playlist" class="navig"> Playlist </a></li>-->
+			</ul>
+		</div>
+		<div class="gradient">
+			<img src="images/gradient.png" style="width: 100%; background-repeat: repeat-x;">
+		</div>
+		<div id="wrapper">
+			
+		<div class="intro">
+			<div class="inner">
+			<h1>Getting Started with Python Web Scraping</h1>
+			
+		</div>
+		</div>
+		<div class="right">
+			<div id="main_next" class="next"></div>
+		</div>
+		<div class="left">
+			<div id="main_prev" class="prev"></div>
+		</div>
+		<div class="right-bottom">
+			<div id="button-next" class="next-bottom"></div>
+		</div>
+		<div class="left-bottom">
+			<div id="button-prev" class="prev-bottom"></div>
+		</div>
+		<div class="back">
+		</div>
+		<div>
+		<div id="content-main">
+			<ul class="move">
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>Section 1: Scraping with Selenium</h1>
+					<p> This section explains the foundations of HTML and CSS, covers how to use the Chrome Developer Tools, and uses this knowledge to write an example of web scraping script using a webdriver with Selenium
+					
+						<ul>
+							<li> The Course Overview </li>
+							<li> When to Web Scrape </li>
+							<li> What Makes up a Website </li>
+							<li> How to Interact with a Website </li>
+							<li>Using the Selenium Module </li>
+							<li> Ethical Web Scraping </li>
+						</ul>
+					</p>
+					<div id="#content-1" class="btn btn-primary browse">Browse Videos</div>
+
+				</li>
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>Section 2: Parsing with BeautifulSoup</h1>
+					<p> This section goes over how to start web scraping using the BeautifulSoup4 module.
+						<ul>
+							<li> Requesting HTML </li>
+							<li> Using the BeautifulSoup Module </li>
+							<li> Example: Parsing Wikipedia</li>
+						</ul>
+					</p>
+					<div class="btn btn-primary browse" id="#content-2">Browse Videos</div>
+				</li>
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>Section 3: Fetching the urlib2 and API’s</h1>
+					<p> In this section, we will delve into situations when to avoid webscraping especially when the information in question is readily available particularly through APIs. We will cover APIs, its background information and also a few examples.
+						<ul>
+							<li> Bypassing the Browser </li>
+							<li> Introduction to APIs</li>
+							<li> Working with APIs </li>
+						</ul>
+					</p>
+					<div class="btn btn-primary browse" id="#content-3">Browse Videos</div>
+				</li>
+			</ul>
+		</div>
+    <div class="chapter" id="content-1" style="position: relative; top: -500px; display: none;">
+			<ul class="move">
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>1.1 The Course Overview</h1>
+					<span>
+						This video provides an overview of the entire course.
+					</span>
+					<div id="video1_1" class="btn btn-small btn-primary watch" data-video="videos/video1_1.mp4" data-poster="images/videoImage.jpg">Watch Video</div>
+					<a href="videos/video1_1.mp4" class="btn btn-small btn-primary download" target="_blank">Download</a>
+					<div class="last-hidden">Last Viewed</div>
+				</li>
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>1.2	When to Web Scrape</h1>
+					<span> This video aims to explain the course’s expected prerequisite knowledge and system requirements, then introduce the concept of web scraping, situations in which you may want to use it,and why it is a valuable skill to know.
+          <ul>
+							<li> Understand the scope of the course. </li>
+							<li>Understand the applications of web scraping. </li>
+							<li>Understand how it will help you in your day-to-day life. </li>
+						</ul>
+          </span>
+					<div id="video1_2" class="btn btn-small btn-primary watch" data-video="videos/video1_2.mp4" data-poster="images/videoImage.jpg" >Watch Video</div>
+					<a href="videos/video1_2.mp4" class="btn btn-small btn-primary download" target="_blank">Download</a>
+					<div class="last-hidden">Last Viewed</div>
+				</li>
+				
+					<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>1.3	What Makes up a Website</h1>
+					<span> Without understanding the foundations of web development, it is challenging to write efficient and robust web scraping scripts, so we will cover how a website is structured and how to locate data with precision.
+          <ul>
+							<li>Understanding the basics of HTML tags and properties. </li>
+							<li> Understanding CSS and how it relates to our goal.  </li>
+							<li> Applying CSS selectors to cleanly identify our desired data. </li>
+						</ul>
+          </span>
+					<div id="video1_3" class="btn btn-small btn-primary watch" data-video="videos/video1_3.mp4" data-poster="images/videoImage.jpg" >Watch Video</div>
+					<a href="videos/video1_3.mp4" class="btn btn-small btn-primary download" target="_blank">Download</a>
+					<div class="last-hidden">Last Viewed</div>
+				</li>
+				
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>1.4	How to Interact with a Website</h1>
+					<span> In order to query a website to scrape data from it, we need to see how the website is structured in its underlying code. We also need an application that will let us test our queries.To do this, we will learn about the element explorer and console of the Chrome Developer Tools.
+          <ul>
+							<li> Open your browser’s developer tools. </li>
+							<li> Use the Element Explorer to identify our desired data. </li>
+							<li> Use the Console to test and debug our selectors. </li>
+						</ul>
+          </span>
+					<div id="video1_4" class="btn btn-small btn-primary watch" data-video="videos/video1_4.mp4" data-poster="images/videoImage.jpg" >Watch Video</div>
+					<a href="videos/video1_4.mp4" class="btn btn-small btn-primary download" target="_blank">Download</a>
+					<div class="last-hidden">Last Viewed</div>
+				</li>
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>1.5	Using the Selenium Module</h1>
+					<span> Now we know how to create CSS selectors and use the Chrome developer tools to look at HTML and construct a query, but how do we turn this into a Python script? We use the selenium module and a web driver.
+          <ul>
+							<li> Download the ChromeDriverWebDriver. </li>
+							<li> Install the Selenium module for Python. </li>
+							<li> Use these to write Python code to automate the browser.. </li>
+						</ul>
+          </span>
+					<div id="video1_5" class="btn btn-small btn-primary watch" data-video="videos/video1_5.mp4" data-poster="images/videoImage.jpg" >Watch Video</div>
+					<a href="videos/video1_5.mp4" class="btn btn-small btn-primary download" target="_blank">Download</a>
+					<div class="last-hidden">Last Viewed</div>
+				</li>
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>1.6	Ethical Web Scraping</h1>
+					<span> Now that we know how to web scrape with Python, we need to be aware of the ethical and legal ramifications associated with web scraping. Mainly, the solution is to be considerate and use common sense.
+          <ul>
+							<li> Understand your script’s effect on a website. </li>
+							<li> Read a website’s terms and conditions. </li>
+							<li> Take steps to mitigate the stress your script imposes. </li>
+						</ul>
+          </span>
+					<div id="video1_6" class="btn btn-small btn-primary watch" data-video="videos/video1_6.mp4" data-poster="images/videoImage.jpg" >Watch Video</div>
+					<a href="videos/video1_6.mp4" class="btn btn-small btn-primary download" target="_blank">Download</a>
+					<div class="last-hidden">Last Viewed</div>
+				</li>
+				</ul>
+		</div>
+  	<div class="chapter" id="content-2" style="position: relative; top: -500px; display: none;">
+			<ul class="move">
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>2.1	Requesting HTML</h1>
+					<span> BeautifulSoup cannot work alone. Although it’s a great tool for parsing and organizing a website’s HTML, it doesn’t get the HTML for us, so we have to figure out another method to request a website’s HTML.
+
+						<ul>
+							<li> Make sure to confirm the website is server-side. </li>
+							<li> Use the Requests or urllib module to make HTTP requests. </li>
+							<li> Download the HTML locally in order to develop your script. </li>
+						
+						</ul>
+						
+					</span>
+					<div id="video2_1"class="btn btn-small btn-primary watch" data-video="videos/video2_1.mp4" data-poster="images/videoImage.jpg" >Watch Video</div>
+					<a href="videos/video2_1.mp4" class="btn btn-small btn-primary download" target="_blank">Download</a>
+					<div class="last-hidden">Last Viewed</div>
+				</li>
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>2.2	Using the BeautifulSoup Module</h1>
+					<span> So, now we have some HTML strings loaded in Python, but how can we use BeautifulSoup to intelligently start selecting important data from it?
+          	<ul>
+							<li> First, figure out which parser to use </li>
+							<li> Then, experiment with the BeautifulSoup methods and objects </li>
+							<li> Now, use the CSS selectors we have already mastered! </li>
+						
+						</ul>
+          </span>
+					<div id="video2_2" class="btn btn-small btn-primary watch" data-video="videos/video2_2.mp4" data-poster="images/videoImage.jpg" >Watch Video</div>
+					<a href="videos/video2_2.mp4" class="btn btn-small btn-primary download" target="_blank">Download</a>
+					<div class="last-hidden">Last Viewed</div>
+				</li>
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>2.3	Example: Parsing Wikipedia</h1>
+					<span> The aim of the video is to show an example on how to parse a webpage. For eg, Wikipedia.
+						<ul>
+							<li> First, we will walk through a complete example of parsing some inconsistent information on Wikipedia </li>
+							<li> Then, we will see BeautfulSoup in action using CSS Selectors </li>
+							<li> Finaly, we will use Python and BeautifulSoup methods to extract the data we want </li>
+						</ul>
+          </span>
+					<div id="video2_3" class="btn btn-small btn-primary watch" data-video="videos/video2_3.mp4" data-poster="images/videoImage.jpg" >Watch Video</div>
+					<a href="videos/video2_3.mp4" class="btn btn-small btn-primary download" target="_blank">Download</a>
+					<div class="last-hidden" >Last Viewed</div>
+				</li>
+			</ul>
+		</div>
+		<div class="chapter" id="content-3" style="position: relative; top: -500px; display: none;">
+			<ul class="move">
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>3.1	Bypassing the Browser</h1>
+					<span> Is writing a web-scraping script always the right method, or are there better alternative solutions?
+						<ul>
+							<li> Always look for the source of the data </li>
+							<li> See if there is an API available </li>
+							<li> Don’t reinvent the wheel where unnecessary! </li>
+						</ul>
+          </span>
+					<div id="video3_1"class="btn btn-small btn-primary watch" data-video="videos/video3_1.mp4" data-poster="images/videoImage.jpg" >Watch Video</div>
+					<a href="videos/video3_1.mp4" class="btn btn-small btn-primary download" target="_blank">Download</a>
+					<div class="last-hidden">Last Viewed</div>
+				</li>
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>3.2	Introduction to APIs</h1>
+					<span> If not through web scraping, how can we get the information using an API with Python?
+						<ul>
+							<li> Understand how to structure the API request. </li>
+							<li> Understand how to interpret the API response. </li>
+							<li> Submit your requests just like before </li>
+						</ul>
+          </span>
+					<div id="video3_2" class="btn btn-small btn-primary watch" data-video="videos/video3_2.mp4" data-poster="images/videoImage.jpg">Watch Video</div>
+					<a href="videos/video3_2.mp4" class="btn btn-small btn-primary download" target="_blank">Download</a>
+					<div class="last-hidden">Last Viewed</div>
+				</li>
+				<li><img src="images/image.jpg" class="image-holder"/>
+					<h1>3.3	Working with APIs</h1>
+					<span> Some APIs require authentication and they require multiple parameters. How do we integrate these into our script?
+						<ul>
+							<li> Request or purchase an API key from the developer.</li>
+							<li> Include your parameters as a dictionary type. </li>
+							<li> Know when to web scrape and when to use APIs. </li>
+						</ul>
+          </span>
+					<div id="video3_3" class="btn btn-small btn-primary watch" data-video="videos/video3_3.mp4" data-poster="images/videoImage.jpg" >Watch Video</div>
+					<a href="videos/video3_3.mp4" class="btn btn-small btn-primary download" target="_blank">Download</a>
+					<div class="last-hidden" >Last Viewed</div>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<div id="video-wrapper">
+			<div id="video-player" class="video">
+			</div>
+			<a href="#" id="largerqt">View Larger</a>
+			<h1></h1>
+			<span></span>
+			<a href="#" class="watch-next-video btn btn-primary  navigation" style="left: 550px;" data-next="" data-video="" data-prev="">Next</a>
+			<a href="#" class="watch-prev-video btn btn-primary  navigation" style="left: 420px;"  data-prev="" data-video="" data-poster="">Prev</a>
+			<div class="btn back-video "><strong>Close</strong>
+			</div>
+		</div>
+		</div>
+		<div class="quicktime-full">
+			<div class="full-player">
+			</div>
+		</div>
+	</body>
+</html>
